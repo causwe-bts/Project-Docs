@@ -38,4 +38,6 @@ https://xd.adobe.com/view/bbda639c-b1f7-47c4-9321-7ab548aa4b90-ee89/
 Domain 모델과 Use case를 기반으로 각 Design Pattern에 따라 실제 기능명세를 하고 클래스를 정의한 문서가 들어가 있습니다. 서비스의 핵심이 되는 Use Case의 상위 50%를 구현해습니다.
 
 ## Class Diagram
-/Class Diagram/ 폴더 안에 정의되어 있습니다.
+/Class Diagram/ 폴더 안에 정의되어 있습니다. RAD(Sequence Diagram)을 정의한것을 바탕으로 실제 모델의 Class를 설계하고 Class간의 member varaible과 method 그리고 모델 Class의 관계를 도식화 해서 정리했습니다.  
+
+추가로 해당 Class와 Domain Model에서 정의한 Domain concepts간의 관계를 정의해주는 Traceability Matrix도 정의되어 있습니다.
