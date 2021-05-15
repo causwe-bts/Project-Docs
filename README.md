@@ -1,6 +1,8 @@
 # Project Documents
 ## Summary
-2021 소프트웨어공학 프로젝트의 문서들의 모임입니다
+2021 소프트웨어공학 프로젝트의 문서들의 모임입니다.  
+본문서는 위에서부터 아래로 시간 순서대로 기술되어 있습니다.  
+문서의 흐름 역시 위에서부터 아래로 이어집니다.
 
 ## Subject
 ### Online Pizza Ordering System 
@@ -30,3 +32,10 @@ https://xd.adobe.com/view/bbda639c-b1f7-47c4-9321-7ab548aa4b90-ee89/
 위 링크에서는 User Senario가 반영된 interative 한 mockup을 볼 수 있습니다.
 
 /Mock Design/ 폴더 안에서 각 페이지별 Mock up 디자인을 이미지 형태로 각각 볼 수 있습니다.
+
+## RAD(Sequence Diagram)
+/RAD(Sequence Diagram)/ 폴더 안에 정의되어 있습니다.
+Domain 모델과 Use case를 기반으로 각 Design Pattern에 따라 실제 기능명세를 하고 클래스를 정의한 문서가 들어가 있습니다. 서비스의 핵심이 되는 Use Case의 상위 50%를 구현해습니다.
+
+## Class Diagram
+/Class Diagram/ 폴더 안에 정의되어 있습니다.
