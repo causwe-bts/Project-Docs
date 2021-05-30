@@ -1,9 +1,39 @@
 # Project Documents
+## Author
+김찬현, 장동훈, 안재형, 이지호, 김동욱, 김상렬
 ## Summary
 2021 소프트웨어공학 프로젝트의 문서들의 모임입니다.  
-본문서는 위에서부터 아래로 시간 순서대로 기술되어 있습니다.  
+아래에서 **Demo** 와 **Service Architecture** 그리고 **프로젝트 설계**에 대한 문서를 볼 수 있습니다.    
+**Subject** 부분부터 본문서는 위에서부터 아래로 시간 순서대로 기술되어 있습니다.  
 문서의 흐름 역시 위에서부터 아래로 이어집니다.
 
+## DEMO
+### 손님
+https://caupizza.shop
+### 직원
+https://caupizza.shop/admin
+
+## Service Architecture
+### 서비스 도식화
+![ex_screenshot](./architecture.png)
+
+### 구조
+EC2 위에 NGINX를 웹서버로 올려놓고 Route35 서비스를 이용해서 caupizza.shop 도메인과 연결해두었다.
+EC2 안에는 Next.js 로 작성된 손님용 FE, 직원용 BE 가 존재하고 mongoDB를 DB로 하는 express.js로 작성된
+BE가 존재한다. 각 인스턴스들의 통신은 nginx를 통해서 이루어지며, 각각 독립적으로 동작하며 API명세에 따라서 동작한다.
+
+**손님용 FE**  
+https://github.com/causwe-bts/BTS-Front  
+**직원용 FE**  
+https://github.com/causwe-bts/BTS-Front-Admin
+
+**BE**    
+https://github.com/causwe-bts/BTS-Backend
+
+**API DOCS**  
+https://github.com/causwe-bts/Project-APIDOC
+
+---
 ## Subject
 ### Online Pizza Ordering System 
 https://nevonprojects.com/online-pizza-ordering-system/
