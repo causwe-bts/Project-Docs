@@ -18,9 +18,11 @@ https://caupizza.shop/admin
 ![ex_screenshot](./architecture.png)
 
 ### 구조
-EC2 위에 NGINX를 웹서버로 올려놓고 Route35 서비스를 이용해서 caupizza.shop 도메인과 연결해두었다.
-EC2 안에는 Next.js 로 작성된 손님용 FE, 직원용 BE 가 존재하고 mongoDB를 DB로 하는 express.js로 작성된
-BE가 존재한다. 각 인스턴스들의 통신은 nginx를 통해서 이루어지며, 각각 독립적으로 동작하며 API명세에 따라서 동작한다.
+EC2 위에 NGINX를 웹서버로 올려놓고 Route35 서비스를 이용해서 caupizza.shop 도메인과 연결해두었습니다. EC2 안에는 Next.js 로 작성된 손님용 FE, 직원용 BE 가 존재하고 mongoDB를 DB로 하는 express.js로 작성된 BE가 존재합니다. 각 인스턴스들의 통신은 nginx를 통해서 이루어지며, 각각 독립적으로 동작하며 API명세에 따라서 동작합니다.  
+
+자세한 설계에서 구현 문서사항은 아래 **설계 문서**와 **Overall Project Implementation Doc**에서 확인할 수 있습니다.
+
+### Repositoy
 
 **손님용 FE**  
 https://github.com/causwe-bts/BTS-Front  
@@ -65,10 +67,15 @@ https://xd.adobe.com/view/bbda639c-b1f7-47c4-9321-7ab548aa4b90-ee89/
 /Mock Design/ 폴더 안에서 각 페이지별 Mock up 디자인을 이미지 형태로 각각 볼 수 있습니다.
 
 ## RAD(Sequence Diagram)
-/RAD(Sequence Diagram)/ 폴더 안에 정의되어 있습니다.
+/RAD(Sequence Diagram)/ 폴더 안에 정의되어 있습니다.  
 Domain 모델과 Use case를 기반으로 각 Design Pattern에 따라 실제 기능명세를 하고 클래스를 정의한 문서가 들어가 있습니다. 서비스의 핵심이 되는 Use Case의 상위 50%를 구현해습니다.
 
 ## Class Diagram
-/Class Diagram/ 폴더 안에 정의되어 있습니다. RAD(Sequence Diagram)을 정의한것을 바탕으로 실제 모델의 Class를 설계하고 Class간의 member varaible과 method 그리고 모델 Class의 관계를 도식화 해서 정리했습니다.  
+/Class Diagram/ 폴더 안에 정의되어 있습니다.   
+RAD(Sequence Diagram)을 정의한것을 바탕으로 실제 모델의 Class를 설계하고 Class간의 member varaible과 method 그리고 모델 Class의 관계를 도식화 해서 정리했습니다.  
 
 추가로 해당 Class와 Domain Model에서 정의한 Domain concepts간의 관계를 정의해주는 Traceability Matrix도 정의되어 있습니다.
+
+## Overall Project Implementation Document
+/Overall Project Implementation Doc/ 폴더 안에 정의되어 있습니다.   
+한 학기 동안 소프트웨어 공학 수업에서 프로젝트를 진행하면서 팀 프로젝트의 협업했던 방식과 구현에 앞서 프로젝트를 진행하면서 작성했던 설계와 다이어그램, 도표 문서들아 실제 구현으로 어떻게 이어졌는지에 대한 설명을 담고 있습니다.
